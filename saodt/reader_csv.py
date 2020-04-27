@@ -30,7 +30,4 @@ def read_csv(file: str, class_index: str) -> Tuple[np.ndarray, np.ndarray]:
     imp_mean = SimpleImputer(missing_values=np.nan, strategy="mean")
     imp_mean.fit_transform(data)
 
-    # scaler = StandardScaler()
-    # data = scaler.fit_transform(data)
-
     return data, classes
